@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>A Mad Tea-Party Order Form</title>
+</head>
+<body>
+
+ <h1>A Mad Tea-Party</h1>
+
+  <h2>Tea Party Supplies</h2>
+    
+<table border="1">
+       <tr>
+  <td>Tea Cups with Saucers</td>
+         <td>$ 35.99</td>
+     </tr>
+        <tr>
+     <td>Tea Pot</td>
+            <td>$ 28.99</td>
+     </tr>
+        <tr>
+ <td>Serving Spoon Set</td>
+            <td>$ 10.99</td>
+     </tr>
+        <tr>
+    <td>Butter Dish</td>
+          <td>$ 12.99</td>
+     </tr>
+   <tr>
+        <td>Bread Knife</td>
+          <td>$ 29.99</td>
+       </tr>
+     <tr>
+      <td>Table Cloth</td>
+           <td>$ 34.99</td>
+  </tr>
+    </table>
+
+  <h3>Order Form</h3>
+
+    <form method="post" action="http://www.rebol.com/cgi-bin/test-cgi.cgi">
+        
+  Customer Name: <input type="text" name="customer"><br><br>
+        
+      Mailing Address: <input type="text" name="address"><br><br>
+        
+       City: <input type="text" name="city"><br><br>
+        
+        State:
+  <select name="state">
+            <option value="IL">IL</option>
+         <option value="IN">IN</option>
+           <option value="MI">MI</option>
+      <option value="WI">WI</option>
+        </select>
+    <br><br>
+        
+        Choose a shipping option:<br>
+  <input type="radio" name="shipping" value="standard"> Standard shipping (3-4 days)<br>
+      <input type="radio" name="shipping" value="rush"> Rush shipping (2 days)<br>
+    <input type="radio" name="shipping" value="overnight"> Overnight shipping (1 day)<br><br>
+        
+     Special delivery instructions?<br>
+ <textarea name="instructions" cols="30" rows="4"></textarea>
+    <br><br>
+        
+   <input type="checkbox" name="mailinglist" checked> E-mail me about future promotions and sales
+        <br><br>
+        
+       <input type="submit" value="Place Order">
+
+  </form>
+
+</body>
+</html>
