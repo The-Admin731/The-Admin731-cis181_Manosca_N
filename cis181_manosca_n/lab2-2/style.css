@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body {
+  background-color: #e0c791;
+  background-image: url("images/art-deco-texture.jpg");
+  background-repeat: repeat;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+header {
+  height: 120px;
+  background-image: url("images/css-zen-garden.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-wrapper {
+  width: 1105px;
+  margin: auto;
+  padding: 1em 2em;
+  background-color: #232428;
+  color: #eacb89;
+}
+
+.summary {
+  font-size: 11px;
+}
+
+.preamble {
+  width: 330px;
+  padding: 35px 10px;
+  margin: 100px 0 0 0;
+  background-image: url("images/column-header-1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  float: left;
+}
+
+.main {
+  width: 730px;
+  padding: 65px 10px;
+  background-image: url("images/column-header-2.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+h1,
+h2 {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+a:link {
+  color: #e30b5d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e30b5d;
+}
+
+a:hover {
+  color: #b4aa99;
+}
+
+a:active {
+  color: #b4aa99;
+}
+
+a:focus {
+  text-decoration: underline;
+}
