@@ -2,24 +2,29 @@
 
 body {
   background-color: #e0c791;
-  background-image: url("images/art-deco-texture.jpg");
+  background-image: url('images/art-deco-texture.jpg');
   background-repeat: repeat;
   font-family: Georgia, "Times New Roman", serif;
 }
 
 header {
   height: 120px;
-  background-image: url("images/css-zen-garden.png");
+  background-image: url('images/css-zen-garden.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+h1, h2 {
+  display: none;
 }
 
 .page-wrapper {
   width: 1105px;
   margin: auto;
-  padding: 1em 2em;
   background-color: #232428;
   color: #eacb89;
+  padding: 1em 2em;
+  overflow: auto;
 }
 
 .summary {
@@ -28,31 +33,25 @@ header {
 
 .preamble {
   width: 330px;
+  float: left;
   padding: 35px 10px;
   margin: 100px 0 0 0;
-  background-image: url("images/column-header-1.png");
+  background-image: url('images/column-header-1.png');
   background-repeat: no-repeat;
   background-position: top;
-  float: left;
 }
 
 .main {
   width: 730px;
+  float: right;
   padding: 65px 10px;
-  background-image: url("images/column-header-2.png");
+  background-image: url('images/column-header-2.png');
   background-repeat: no-repeat;
   background-position: center top;
-  float: right;
 }
 
 footer {
   clear: both;
-}
-
-h1,
-h2 {
-  text-indent: -9999px;
-  overflow: hidden;
 }
 
 a:link {
