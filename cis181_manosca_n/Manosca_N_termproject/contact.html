@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support - PC Gaming & Modding Club</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <h1>Wright College PC Gaming and Modding Club</h1>
+        </header>
+
+        <nav>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+           <li><a href="beginners.html">Beginners Guides</a></li>
+                <li><a href="advanced.html">Advanced Performance & Modding</a></li>
+      <li><a href="events.html">Club Events & Community</a></li>
+                <li><a href="contact.html" class="active">Contact & Support</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <section class="content-section">
+             <h2>Contact and Technical Support</h2>
+                <p>Use this form to send us your hardware questions or suggestions for new meeting topics.</p>
+
+                <form id="contact-form" onsubmit="validarFormulario(event)">
+              <fieldset>
+                        <legend>Student Inquiry Form</legend>
+               <div class="form-group">
+                    <label for="txt-nombre">Full Name:</label>
+                            <input type="text" id="txt-nombre" name="nombre" placeholder="e.g., John Smith" required>
+                     </div>
+
+                        <div class="form-group">
+                <label for="txt-correo">School Email:</label>
+                            <input type="email" id="txt-correo" name="correo" placeholder="example@student.ccc.edu" required>
+                        </div>
+
+                   <div class="form-group">
+                            <label for="select-motivo">Reason for Contact:</label>
+                        <select id="select-motivo" name="motivo">
+                                <option value="unirse">I want to join the club</option>
+                 <option value="soporte">Support / Hardware Issues</option>
+                     <option value="sugerencia">Meeting Topic Suggestion</option>
+                            </select>
+                 </div>
+                        <div class="form-group">
+                <label for="txt-mensaje">Write your message:</label>
+                       <textarea id="txt-mensaje" name="mensaje" rows="5" placeholder="Tell us a bit more..." required></textarea>
+                    </div>
+
+                        <div class="form-group">
+                                         <button type="submit">Submit Form</button>
+                        </div>
+               </fieldset>
+                </form>
+            </section>
+        </article>
+
+        <footer>
+            <p>&copy; 2026 Wright College PC Gaming and Modding Club. Final Project by Nicolas.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
